@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. services.sh
+. "${PWD}/dockered.sh"
 
 for key in  $(printf "%s\n" "${!SERVICES[@]}" | sort); do
   value="${SERVICES[$key]}"
