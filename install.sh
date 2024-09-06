@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. "${PWD}/dockered/services.sh"
+. "${PWD}/dockered.sh"
 
 docker network create --driver bridge $LABEL_PROJECT
 
